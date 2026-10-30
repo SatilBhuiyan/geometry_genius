@@ -11,8 +11,20 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header></header>
+  <body class="lg:w-[1820px] mx-auto">
+    <header class="my-10">
+      <div class="navbar bg-[#108fd820] shadow-sm ">
+        <div class="navbar-start">
+          <div>
+            <a class="btn btn-ghost text-4xl">Interactive</a>
+            <p class="text-[#111111] text-2xl pl-4">Geometry Genius</p>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#1090D8] border-none text-white">Button</a>
+        </div>
+      </div>
+    </header>
     <main class="flex flex-col md:flex-row m-6">
       <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <!-- Triangle -->
@@ -24,16 +36,32 @@
             <h2 class="card-title mx-auto text-2xl">Triangle</h2>
             <p class="mx-auto text-xl">Area (A) = 0.5 X b X n</p>
             <div class="mx-auto">
-              <input id="firstb" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="b">
+              <input
+                id="firstb"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="b"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
-              <input id="firsth" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="h">
+              <input
+                id="firsth"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="h"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
             </div>
             <div class="mx-auto text-xl">
-              <p>Area : <span id="triangle-area"></span><span> cm<sup>2</sup></span></p>
+              <p>
+                Area : <span id="triangle-area"></span
+                ><span> cm<sup>2</sup></span>
+              </p>
             </div>
             <div class="card-actions justify-center">
-              <button onclick="resultriangle()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+              <button
+                onclick="resultriangle()"
+                class="btn btn-primary w-[350px] h-12 font-bold text-xl"
+              >
                 Calculate
               </button>
             </div>
@@ -48,16 +76,32 @@
             <h2 class="card-title mx-auto text-2xl">Rectangle</h2>
             <p class="mx-auto text-xl">Area (A) = W X I</p>
             <div class="mx-auto">
-              <input id="firstw" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="w">
+              <input
+                id="firstw"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="w"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
-              <input id="firsti" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="i">
+              <input
+                id="firsti"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="i"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
             </div>
             <div class="mx-auto text-xl">
-              <p>Area : <span id="rectangle-area"></span><span> cm<sup>2</sup></span></p>
+              <p>
+                Area : <span id="rectangle-area"></span
+                ><span> cm<sup>2</sup></span>
+              </p>
             </div>
             <div class="card-actions justify-center">
-              <button onclick="resultrectangle()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+              <button
+                onclick="resultrectangle()"
+                class="btn btn-primary w-[350px] h-12 font-bold text-xl"
+              >
                 Calculate
               </button>
             </div>
@@ -72,16 +116,32 @@
             <h2 class="card-title mx-auto text-2xl">Parallelogram</h2>
             <p class="mx-auto text-xl">Area (A) = b X h</p>
             <div class="mx-auto">
-              <input id="basePara" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="b">
+              <input
+                id="basePara"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="b"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
-              <input id="heightpara" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="h">
+              <input
+                id="heightpara"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="h"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
             </div>
             <div class="mx-auto text-xl">
-              <p>Area : <span id="Parallelogram-area"></span><span> cm<sup>2</sup></span></p>
+              <p>
+                Area : <span id="Parallelogram-area"></span
+                ><span> cm<sup>2</sup></span>
+              </p>
             </div>
             <div class="card-actions justify-center">
-              <button onclick="resultParallelogram()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+              <button
+                onclick="resultParallelogram()"
+                class="btn btn-primary w-[350px] h-12 font-bold text-xl"
+              >
                 Calculate
               </button>
             </div>
@@ -96,16 +156,32 @@
             <h2 class="card-title mx-auto text-2xl">Rhombus</h2>
             <p class="mx-auto text-xl">Area (A) = 0.5 X d1 X d2</p>
             <div class="mx-auto">
-              <input id="baseRhom" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="d1">
+              <input
+                id="baseRhom"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="d1"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
-              <input id="heightRhom" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="d2">
+              <input
+                id="heightRhom"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="d2"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
             </div>
             <div class="mx-auto text-xl">
-              <p>Area : <span id="Rhombus-area"></span><span> cm<sup>2</sup></span></p>
+              <p>
+                Area : <span id="Rhombus-area"></span
+                ><span> cm<sup>2</sup></span>
+              </p>
             </div>
             <div class="card-actions justify-center">
-              <button onclick="resultRhombus()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+              <button
+                onclick="resultRhombus()"
+                class="btn btn-primary w-[350px] h-12 font-bold text-xl"
+              >
                 Calculate
               </button>
             </div>
@@ -120,16 +196,32 @@
             <h2 class="card-title mx-auto text-2xl">Pentagon</h2>
             <p class="mx-auto text-xl">Area (A) = 0.5 X p X b</p>
             <div class="mx-auto">
-              <input id="basePent" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="p">
+              <input
+                id="basePent"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="p"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
-              <input id="heightPent" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="b">
+              <input
+                id="heightPent"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="b"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
             </div>
             <div class="mx-auto text-xl">
-              <p>Area : <span id="Pentagon-area"></span><span> cm<sup>2</sup></span></p>
+              <p>
+                Area : <span id="Pentagon-area"></span
+                ><span> cm<sup>2</sup></span>
+              </p>
             </div>
             <div class="card-actions justify-center">
-              <button onclick="resultPentagon()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+              <button
+                onclick="resultPentagon()"
+                class="btn btn-primary w-[350px] h-12 font-bold text-xl"
+              >
                 Calculate
               </button>
             </div>
@@ -144,16 +236,32 @@
             <h2 class="card-title mx-auto text-2xl">Ellipse</h2>
             <p class="mx-auto text-xl">Area (A) = 3.1816 X a X b</p>
             <div class="mx-auto">
-              <input id="baseElli" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="a">
+              <input
+                id="baseElli"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="a"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
-              <input id="heightElli" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="b">
+              <input
+                id="heightElli"
+                class="w-24 h-8 text-xl p-2 rounded-sm"
+                type="text"
+                placeholder="b"
+              />
               <span class="mr-4 ml-2 text-xl"> cm </span>
             </div>
             <div class="mx-auto text-xl">
-              <p>Area : <span id="Ellipse-area"></span><span> cm<sup>2</sup></span></p>
+              <p>
+                Area : <span id="Ellipse-area"></span
+                ><span> cm<sup>2</sup></span>
+              </p>
             </div>
             <div class="card-actions justify-center">
-              <button onclick="resultEllipse()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+              <button
+                onclick="resultEllipse()"
+                class="btn btn-primary w-[350px] h-12 font-bold text-xl"
+              >
                 Calculate
               </button>
             </div>
