@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry calculation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header></header>
+    <main class="flex flex-col md:flex-row m-6">
+      <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Triangle -->
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="images/triangle.png" alt="Triangle" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title mx-auto text-2xl">Triangle</h2>
+            <p class="mx-auto text-xl">Area (A) = 0.5 X b X n</p>
+            <div class="mx-auto">
+              <input id="firstb" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="b">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+              <input id="firsth" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="h">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+            </div>
+            <div class="mx-auto text-xl">
+              <p>Area : <span id="triangle-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <div class="card-actions justify-center">
+              <button onclick="resultriangle()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Rectangle -->
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="images/rectangle.png" alt="Triangle" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title mx-auto text-2xl">Rectangle</h2>
+            <p class="mx-auto text-xl">Area (A) = W X I</p>
+            <div class="mx-auto">
+              <input id="firstw" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="w">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+              <input id="firsti" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="i">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+            </div>
+            <div class="mx-auto text-xl">
+              <p>Area : <span id="rectangle-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <div class="card-actions justify-center">
+              <button onclick="resultrectangle()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Parallelogram -->
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="images/parallelogram.png" alt="Triangle" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title mx-auto text-2xl">Parallelogram</h2>
+            <p class="mx-auto text-xl">Area (A) = b X h</p>
+            <div class="mx-auto">
+              <input id="basePara" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="w">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+              <input id="heightpara" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="i">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+            </div>
+            <div class="mx-auto text-xl">
+              <p>Area : <span id="Parallelogram-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <div class="card-actions justify-center">
+              <button onclick="resultParallelogram()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Rhombus -->
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Card Title</h2>
+            <p>
+              A card component has a figure, a body part, and inside body there
+              are title and actions parts
+            </p>
+            <div class="card-actions justify-end">
+              <button onclick="resultriangle()" class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-96 h-96 border-2 border-gray-700 rounded-sm">
+        <h1 class="text-xl">Area Calculation</h1>
+      </div>
+    </main>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
