@@ -72,9 +72,9 @@
             <h2 class="card-title mx-auto text-2xl">Parallelogram</h2>
             <p class="mx-auto text-xl">Area (A) = b X h</p>
             <div class="mx-auto">
-              <input id="basePara" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="w">
+              <input id="basePara" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="b">
               <span class="mr-4 ml-2 text-xl"> cm </span>
-              <input id="heightpara" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="i">
+              <input id="heightpara" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="h">
               <span class="mr-4 ml-2 text-xl"> cm </span>
             </div>
             <div class="mx-auto text-xl">
@@ -90,19 +90,72 @@
         <!-- Rhombus -->
         <div class="card bg-base-100 w-96 shadow-sm">
           <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes"
-            />
+            <img src="images/Rhombus.png" alt="Triangle" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Card Title</h2>
-            <p>
-              A card component has a figure, a body part, and inside body there
-              are title and actions parts
-            </p>
-            <div class="card-actions justify-end">
-              <button onclick="resultriangle()" class="btn btn-primary">Buy Now</button>
+            <h2 class="card-title mx-auto text-2xl">Rhombus</h2>
+            <p class="mx-auto text-xl">Area (A) = 0.5 X d1 X d2</p>
+            <div class="mx-auto">
+              <input id="baseRhom" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="d1">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+              <input id="heightRhom" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="d2">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+            </div>
+            <div class="mx-auto text-xl">
+              <p>Area : <span id="Rhombus-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <div class="card-actions justify-center">
+              <button onclick="resultRhombus()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pentagon -->
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="images/Pentagon.png" alt="Triangle" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title mx-auto text-2xl">Pentagon</h2>
+            <p class="mx-auto text-xl">Area (A) = 0.5 X p X b</p>
+            <div class="mx-auto">
+              <input id="basePent" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="p">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+              <input id="heightPent" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="b">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+            </div>
+            <div class="mx-auto text-xl">
+              <p>Area : <span id="Pentagon-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <div class="card-actions justify-center">
+              <button onclick="resultPentagon()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Ellipse -->
+        <div class="card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img src="images/Ellipse.png" alt="Ellipse" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title mx-auto text-2xl">Ellipse</h2>
+            <p class="mx-auto text-xl">Area (A) = 3.1816 X a X b</p>
+            <div class="mx-auto">
+              <input id="baseElli" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="a">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+              <input id="heightElli" class="w-24 h-8 text-xl p-2 rounded-sm" type="text" placeholder="b">
+              <span class="mr-4 ml-2 text-xl"> cm </span>
+            </div>
+            <div class="mx-auto text-xl">
+              <p>Area : <span id="Ellipse-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <div class="card-actions justify-center">
+              <button onclick="resultEllipse()" class="btn btn-primary w-[350px] h-12 font-bold text-xl">
+                Calculate
+              </button>
             </div>
           </div>
         </div>

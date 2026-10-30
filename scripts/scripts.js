@@ -48,3 +48,38 @@ function resultParallelogram()
     const resultarea =document.getElementById('Parallelogram-area');
     resultarea.innerText = area;
 }
+
+
+function resultPentagon()
+{
+    const Pentagontag = document.getElementById('basePent');
+    const Pentagontext = Pentagontag.value;
+    const p = parseFloat(Pentagontext);
+    
+
+    const Pentagontag2 = document.getElementById('heightPent');
+    const Pentagontext2 = Pentagontag2.value;
+    const b = parseFloat(Pentagontext2);
+    
+    const area = 0.5*p*b;
+
+    const Pentagonarea = document.getElementById('Pentagon-area');
+    Pentagonarea.innerText = area;
+}
+
+function resultEllipse()
+{
+    const Ellipsetag = document.getElementById('baseElli');
+    const Ellipsetext = Ellipsetag.value;
+    const a = parseFloat(Ellipsetext);
+    
+
+    const Ellipsetag2 = document.getElementById('heightElli');
+    const Ellipsetext2 = Ellipsetag2.value;
+    const b = parseFloat(Ellipsetext2);
+    
+    const area = 3.1816*a*b;
+
+    const Ellipsearea = document.getElementById('Ellipse-area');
+    Ellipsearea.innerText = area;
+}
