@@ -49,6 +49,22 @@ function resultParallelogram()
     resultarea.innerText = area;
 }
 
+function resultRhombus()
+{
+    const Rhombustag = document.getElementById('baseRhom');
+    const Rhombustext = Rhombustag.value;
+    const d1 = parseFloat(Rhombustext);
+    
+
+    const Rhombustag2 = document.getElementById('heightRhom');
+    const Rhombustext2 = Rhombustag2.value;
+    const d2 = parseFloat(Rhombustext2);
+    
+    const area = 0.5*d1*d2;
+
+    const Rhombusarea = document.getElementById('Rhombus-area');
+    Rhombusarea.innerText = area;
+}
 
 function resultPentagon()
 {
